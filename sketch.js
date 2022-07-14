@@ -86,7 +86,7 @@ function setup() {
  
 
   
- console.log('A*')
+ //console.log('A*')
 
  w = width / cols;
  h = height / rows;
@@ -110,7 +110,7 @@ for (var i = 0; i < cols; i++){
  
 
 
-  console.log(grid);
+ // console.log(grid);
 
   createCanvas(400,400)
   w = floor(width / rez);
@@ -131,12 +131,12 @@ function foodLocation() {
 
   food = createVector(snake.foodx, snake.foody);
   end = grid[snake.foodx, snake.foody];
-  console.log("end = ", end)
+  //console.log("end = ", end)
 
 
   
 
-  console.log('FOOD GENERATED (foodLocation)')
+  //console.log('FOOD GENERATED (foodLocation)')
   //various console.log's to aid in debugging
   //shows what parts of the program is running 
   //also records data such as head position 
@@ -154,7 +154,7 @@ function foodLocation() {
 
 function keyPressed() {
 
-  console.log('keyPressed')
+ // console.log('keyPressed')
 
   if (key === 'a'){
     snake.setDir(-1, 0);//left
@@ -174,7 +174,7 @@ function keyPressed() {
 
 
 function draw() {
-  console.log('draw')
+ // console.log('draw')
   scale(rez);
   background(137, 207, 240);
 
@@ -182,7 +182,7 @@ function draw() {
 
   //calls on function drawWords to write the title 
 
-  console.log("food location should be ", snake.foodx, snake.foody)
+ // console.log("food location should be ", snake.foodx, snake.foody)
 
   snake.foodcheck()
 
@@ -192,7 +192,7 @@ function draw() {
   
   
 
-  console.log('frame:', frame)
+ // console.log('frame:', frame)
 
  //for(var i = 0; i < cols; i++) {
    //for(var j = 0; j< rows; j++ ){

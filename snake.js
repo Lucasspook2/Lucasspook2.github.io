@@ -36,10 +36,10 @@ class Snake {
     }catch{
     }
 
-    console.log('head position', head.x, head.y);
+    //console.log('head position', head.x, head.y);
 
     try{
-    console.log ('grid pos of head', grid[head.x][head.y]);
+    //console.log ('grid pos of head', grid[head.x][head.y]);
     }catch{
     }
 
@@ -51,7 +51,7 @@ class Snake {
   
   grow() {
     openSet.push(start)
-    console.log('start', start)
+   // console.log('start', start)
   	let head = this.body[this.body.length-1].copy();
     this.len++;
     this.body.push(head);
@@ -75,7 +75,7 @@ class Snake {
   eat(pos) {
   	let x = this.body[this.body.length-1].x;
     let y = this.body[this.body.length-1].y;
-    console.log('food position', pos.x , pos.y)
+   // console.log('food position', pos.x , pos.y)
     this.astarendx = pos.x;
     this.astarendy = pos.y;
 
@@ -114,7 +114,7 @@ class Snake {
     this.foodx = Math.round(this.randomNumber(0, 19));
     this.foody = Math.round(this.randomNumber(0, 19));
 
-    console.log("random numbers", this.foodx, this.foody)
+   // console.log("random numbers", this.foodx, this.foody)
     let x = this.body[this.body.length-1].x;
     let y = this.body[this.body.length-1].y;
 
