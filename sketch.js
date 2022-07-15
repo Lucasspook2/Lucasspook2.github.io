@@ -115,7 +115,7 @@ for (var i = 0; i < cols; i++){
   createCanvas(400,400)
   w = floor(width / rez);
   h = floor(height / rez);
-  frameRate(6);
+  frameRate(1);
   snake = new Snake();
   foodLocation();
 
